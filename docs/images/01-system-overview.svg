@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
+  <rect width="1200" height="520" fill="#f7f9fc"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Segoe UI,Arial" font-size="30" font-weight="700" fill="#172033">WakePC ESP32 — Tổng quan hệ thống</text>
+  <rect x="70" y="150" width="250" height="190" rx="22" fill="#ffffff" stroke="#44546a" stroke-width="3"/>
+  <text x="195" y="205" text-anchor="middle" font-family="Segoe UI,Arial" font-size="24" font-weight="700" fill="#172033">Điện thoại / Laptop</text>
+  <text x="195" y="248" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Mở wakepc.local</text>
+  <text x="195" y="282" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Nhấn Wake</text>
+
+  <rect x="475" y="130" width="250" height="230" rx="22" fill="#ffffff" stroke="#1570ef" stroke-width="4"/>
+  <text x="600" y="192" text-anchor="middle" font-family="Segoe UI,Arial" font-size="28" font-weight="700" fill="#175cd3">ESP32 / ESP8266</text>
+  <text x="600" y="235" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Web server + cấu hình Wi-Fi</text>
+  <text x="600" y="268" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Magic Packet UDP/9</text>
+  <text x="600" y="301" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Broadcast + Unicast fallback</text>
+
+  <rect x="880" y="150" width="250" height="190" rx="22" fill="#ffffff" stroke="#039855" stroke-width="3"/>
+  <text x="1005" y="205" text-anchor="middle" font-family="Segoe UI,Arial" font-size="25" font-weight="700" fill="#067647">PC đích</text>
+  <text x="1005" y="248" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">Ethernet NIC</text>
+  <text x="1005" y="282" text-anchor="middle" font-family="Segoe UI,Arial" font-size="19" fill="#344054">BIOS/UEFI WOL bật</text>
+
+  <line x1="320" y1="245" x2="465" y2="245" stroke="#667085" stroke-width="5"/>
+  <polygon points="465,245 443,233 443,257" fill="#667085"/>
+  <text x="392" y="222" text-anchor="middle" font-family="Segoe UI,Arial" font-size="16" fill="#475467">HTTP</text>
+
+  <line x1="725" y1="245" x2="870" y2="245" stroke="#667085" stroke-width="5"/>
+  <polygon points="870,245 848,233 848,257" fill="#667085"/>
+  <text x="797" y="222" text-anchor="middle" font-family="Segoe UI,Arial" font-size="16" fill="#475467">UDP/9</text>
+
+  <rect x="250" y="405" width="700" height="65" rx="16" fill="#eef4ff" stroke="#84adff" stroke-width="2"/>
+  <text x="600" y="445" text-anchor="middle" font-family="Segoe UI,Arial" font-size="20" fill="#1849a9">ESP gửi packet; việc PC có bật hay không phụ thuộc NIC + BIOS/UEFI + trạng thái nguồn + mạng.</text>
+</svg>
