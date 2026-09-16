@@ -125,6 +125,12 @@ Nếu có **ErP**, **Deep Sleep** hoặc tùy chọn cắt hoàn toàn nguồn L
 
 > Không phải mọi máy/driver đều có cùng danh sách thuộc tính.
 
+<p align="center">
+  <img src="docs/images/screenshots/04-windows-wol-verification.png" alt="Kiểm tra thuộc tính Wake-on-LAN trên Windows" width="1000">
+</p>
+
+> Ảnh trên là kiểm tra thực tế trên Windows. Hãy xác nhận `Wake on Magic Packet` là `Enabled`. Có thể kiểm tra bổ sung bằng `powercfg /devicequery wake_armed`; kết quả mục này phụ thuộc driver và trạng thái nguồn.
+
 ### 4.3 Xác định đúng MAC Ethernet
 
 Mở PowerShell hoặc Command Prompt:
@@ -187,6 +193,10 @@ PlatformIO IDE đã tích hợp PlatformIO Core nên với cách dùng thông th
   <img src="docs/images/03-platformio-workflow.svg" alt="Quy trình PlatformIO" width="900">
 </p>
 
+
+<p align="center">
+  <img src="docs/images/screenshots/05-vscode-platformio-extension.png" alt="PlatformIO IDE đã cài trong Visual Studio Code" width="1000">
+</p>
 ---
 
 ## 6. Tải project và mở bằng PlatformIO
@@ -208,6 +218,10 @@ code .
 
 PlatformIO sẽ đọc cấu hình project và tự tải dependency cần thiết khi build lần đầu.
 
+
+<p align="center">
+  <img src="docs/images/screenshots/06-vscode-platformio-project.png" alt="Project WakeOnLan và platformio.ini trong Visual Studio Code" width="1000">
+</p>
 ---
 
 ## 7. Chọn đúng board
@@ -252,6 +266,12 @@ Build thành công khi PlatformIO kết thúc với trạng thái `SUCCESS`.
 pio run -e esp32c3_supermini -e esp32dev -e esp8266_nodemcuv2
 ```
 
+
+<p align="center">
+  <img src="docs/images/screenshots/08-platformio-build-success.png" alt="Build ESP32-C3 Super Mini thành công bằng PlatformIO" width="1000">
+</p>
+
+> Ảnh chụp là một lần build thực tế của environment `esp32c3_supermini`. Khi source thay đổi, số liệu RAM/Flash có thể thay đổi; tiêu chí bắt buộc là PlatformIO kết thúc với `SUCCESS`.
 ---
 
 ## 9. Nạp firmware
@@ -263,6 +283,9 @@ pio device list
 ```
 
 Ví dụ ESP32-C3 có thể xuất hiện như `COM21`, nhưng máy khác có thể là số COM khác.
+
+
+> **Trước khi upload:** chạy `pio device list` và xác nhận thiết bị ESP32/USB CDC/JTAG-Serial thực sự xuất hiện. Không chọn một cổng COM chỉ dựa vào số cổng hoặc vì nó đang có sẵn trên máy.
 
 ### 9.2 Nạp bằng environment
 
