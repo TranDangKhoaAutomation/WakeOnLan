@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <rect width="1200" height="500" fill="#f8fafc"/>
+  <text x="600" y="52" text-anchor="middle" font-family="Segoe UI,Arial" font-size="30" font-weight="700" fill="#172033">Quy trình cài đặt và nạp firmware</text>
+  <g font-family="Segoe UI,Arial">
+    <rect x="70" y="150" width="190" height="120" rx="18" fill="#fff" stroke="#475467" stroke-width="3"/><text x="165" y="198" text-anchor="middle" font-size="23" font-weight="700" fill="#172033">1. VS Code</text><text x="165" y="235" text-anchor="middle" font-size="17" fill="#475467">Cài editor</text>
+    <rect x="335" y="150" width="190" height="120" rx="18" fill="#fff" stroke="#1570ef" stroke-width="3"/><text x="430" y="198" text-anchor="middle" font-size="23" font-weight="700" fill="#175cd3">2. PlatformIO</text><text x="430" y="235" text-anchor="middle" font-size="17" fill="#475467">Cài extension</text>
+    <rect x="600" y="150" width="190" height="120" rx="18" fill="#fff" stroke="#7f56d9" stroke-width="3"/><text x="695" y="198" text-anchor="middle" font-size="23" font-weight="700" fill="#6941c6">3. Open Folder</text><text x="695" y="235" text-anchor="middle" font-size="17" fill="#475467">Mở platformio.ini</text>
+    <rect x="865" y="150" width="190" height="120" rx="18" fill="#fff" stroke="#039855" stroke-width="3"/><text x="960" y="198" text-anchor="middle" font-size="23" font-weight="700" fill="#067647">4. Build/Upload</text><text x="960" y="235" text-anchor="middle" font-size="17" fill="#475467">Chọn đúng env</text>
+    <line x1="260" y1="210" x2="325" y2="210" stroke="#667085" stroke-width="4"/><polygon points="325,210 305,199 305,221" fill="#667085"/>
+    <line x1="525" y1="210" x2="590" y2="210" stroke="#667085" stroke-width="4"/><polygon points="590,210 570,199 570,221" fill="#667085"/>
+    <line x1="790" y1="210" x2="855" y2="210" stroke="#667085" stroke-width="4"/><polygon points="855,210 835,199 835,221" fill="#667085"/>
+    <rect x="200" y="340" width="800" height="80" rx="16" fill="#f2f4f7" stroke="#d0d5dd" stroke-width="2"/>
+    <text x="600" y="377" text-anchor="middle" font-family="Consolas,monospace" font-size="18" fill="#101828">pio run -e esp32c3_supermini</text>
+    <text x="600" y="403" text-anchor="middle" font-family="Consolas,monospace" font-size="18" fill="#101828">pio run -e esp32c3_supermini -t upload</text>
+  </g>
+</svg>
