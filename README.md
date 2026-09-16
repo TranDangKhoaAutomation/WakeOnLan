@@ -131,6 +131,12 @@ Nếu có **ErP**, **Deep Sleep** hoặc tùy chọn cắt hoàn toàn nguồn L
 
 > Ảnh trên là kiểm tra thực tế trên Windows. Hãy xác nhận `Wake on Magic Packet` là `Enabled`. Có thể kiểm tra bổ sung bằng `powercfg /devicequery wake_armed`; kết quả mục này phụ thuộc driver và trạng thái nguồn.
 
+<p align="center">
+  <img src="docs/images/screenshots/11-windows-wol-power-state.png" alt="Trạng thái Wake-on-LAN thực tế của Intel I219-LM trên Windows" width="1000">
+</p>
+
+> Verification trên máy thử: `Wake on Magic Packet` và `Wake from S0ix on Magic Packet` đang `Enabled`; Intel I219-LM có mặt trong `wake_from_any` nhưng **chưa có trong `wake_armed`**. Nếu máy chưa thức được từ trạng thái nguồn mong muốn, cần kiểm tra thêm tab **Power Management**, driver NIC và BIOS/UEFI. Ảnh này chỉ đọc trạng thái, không thay đổi cấu hình Windows.
+
 ### 4.3 Xác định đúng MAC Ethernet
 
 Mở PowerShell hoặc Command Prompt:
