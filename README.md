@@ -295,6 +295,12 @@ pio run -e esp32c3_supermini -t upload
 
 Nếu project đã cấu hình cổng upload cố định nhưng máy bạn dùng COM khác, sửa đúng `upload_port` hoặc truyền cổng phù hợp theo cấu hình PlatformIO hiện tại.
 
+<p align="center">
+  <img src="docs/images/screenshots/09-platformio-upload-success.png" alt="Upload firmware ESP32-C3 thành công bằng PlatformIO" width="1000">
+</p>
+
+> Ảnh trên là log từ một lần upload thực tế: flash được ghi và verify thành công, board reset lại và PlatformIO kết thúc với `SUCCESS` / `EXIT=0`. Số COM trên máy khác có thể khác.
+
 ### 9.3 Nếu ESP32-C3 không vào chế độ nạp
 
 Với một số board C3:
@@ -343,6 +349,12 @@ Trên thiết bị ở cùng mạng với ESP, thử:
 ```text
 http://wakepc.local/
 ```
+
+<p align="center">
+  <img src="docs/images/screenshots/10-wakepc-local-web.png" alt="Giao diện WakePC Controller truy cập thật qua wakepc.local" width="1000">
+</p>
+
+> Ảnh trên được chụp khi ESP32-C3 đã kết nối STA, web server trả HTTP `200 OK` và `http://wakepc.local/` được mở trực tiếp trên trình duyệt. IP DHCP có thể thay đổi theo router.
 
 Nếu không được, xem IP ESP trên router hoặc Serial Monitor rồi mở trực tiếp, ví dụ:
 
