@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+  <rect width="1200" height="560" fill="#f8fafc"/>
+  <text x="600" y="50" text-anchor="middle" font-family="Segoe UI,Arial" font-size="30" font-weight="700" fill="#172033">Boot lần đầu và cấu hình mạng</text>
+  <g font-family="Segoe UI,Arial">
+    <rect x="80" y="120" width="230" height="110" rx="18" fill="#fff" stroke="#475467" stroke-width="3"/><text x="195" y="168" text-anchor="middle" font-size="23" font-weight="700">ESP khởi động</text><text x="195" y="202" text-anchor="middle" font-size="17" fill="#475467">Đọc Wi-Fi đã lưu</text>
+    <rect x="485" y="110" width="230" height="130" rx="18" fill="#fff" stroke="#1570ef" stroke-width="3"/><text x="600" y="158" text-anchor="middle" font-size="23" font-weight="700" fill="#175cd3">STA kết nối?</text><text x="600" y="195" text-anchor="middle" font-size="17" fill="#475467">SSID + password hợp lệ</text>
+    <rect x="890" y="80" width="230" height="110" rx="18" fill="#ecfdf3" stroke="#039855" stroke-width="3"/><text x="1005" y="128" text-anchor="middle" font-size="23" font-weight="700" fill="#067647">Có</text><text x="1005" y="162" text-anchor="middle" font-size="17" fill="#475467">wakepc.local</text>
+    <rect x="890" y="300" width="230" height="130" rx="18" fill="#fff7ed" stroke="#f79009" stroke-width="3"/><text x="1005" y="348" text-anchor="middle" font-size="23" font-weight="700" fill="#b54708">Không</text><text x="1005" y="382" text-anchor="middle" font-size="17" fill="#475467">AP WakePC-ESP32</text><text x="1005" y="408" text-anchor="middle" font-size="17" fill="#475467">Mở trang cấu hình</text>
+    <line x1="310" y1="175" x2="475" y2="175" stroke="#667085" stroke-width="4"/><polygon points="475,175 455,164 455,186" fill="#667085"/>
+    <line x1="715" y1="145" x2="880" y2="135" stroke="#039855" stroke-width="4"/><polygon points="880,135 858,126 860,148" fill="#039855"/>
+    <line x1="715" y1="205" x2="880" y2="345" stroke="#f79009" stroke-width="4"/><polygon points="880,345 858,338 870,320" fill="#f79009"/>
+    <path d="M 890 400 C 720 500, 500 500, 500 250" fill="none" stroke="#f79009" stroke-width="4" stroke-dasharray="10,8"/>
+    <polygon points="500,250 489,272 511,272" fill="#f79009"/>
+    <text x="650" y="505" text-anchor="middle" font-size="18" fill="#7a2e0e">Lưu Wi-Fi → reboot/reconnect → thử STA lại</text>
+  </g>
+</svg>
